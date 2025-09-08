@@ -28,13 +28,11 @@ jobs:
     - name: "Configure Haxelib"
       run: |
         haxelib setup /home/runner/haxe/haxelib/
-        haxelib install haxelib 4.0.3 --quiet
-        haxelib install munit --quiet
+        haxelib install haxelib 4.0.3
         haxelib dev flixel .
     
     - uses: HaxeFlixel/setup-flixel@master
       with:
-        haxe-version: current
         flixel-versions: dev
         test-location: local
         target: ${{matrix.target}}
