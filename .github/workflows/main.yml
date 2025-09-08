@@ -29,6 +29,7 @@ jobs:
       run: |
         haxelib setup /home/runner/haxe/haxelib/
         haxelib install haxelib 4.2.0 --quiet
+        haxelib install munit --quiet
         haxelib dev flixel .
     
     - uses: HaxeFlixel/setup-flixel@v1
