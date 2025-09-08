@@ -28,7 +28,7 @@ jobs:
     - name: "Configure Haxelib"
       run: |
         haxelib setup /home/runner/haxe/haxelib/
-        haxelib install haxelib 4.0.3
+        haxelib install haxelib 4.0.2 --quiet
         haxelib dev flixel .
     
     - uses: HaxeFlixel/setup-flixel@v1
